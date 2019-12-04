@@ -1,0 +1,21 @@
+
+*{
+    background-color: lightskyblue;
+    align-content: center;
+    font-family: "century gothic"
+}
+h1{
+  text-justify: right;  
+  color: green
+  
+}
+body{
+    align-content: center
+}
+
+img{
+    padding: 40px;
+    size: 20%
+    
+    
+}
