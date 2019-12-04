@@ -5,6 +5,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+
 //global variables
 var date ='';
 var explanation ='';
