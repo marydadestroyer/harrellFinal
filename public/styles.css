@@ -2,8 +2,12 @@
 *{
     background-color: lightskyblue;
     align-content: center;
+    font-family: "century gothic"
 }
 h1{
   text-justify: right;  
-  font-family: "century gothic"
+  
+}
+img{
+    size: 50%
 }
