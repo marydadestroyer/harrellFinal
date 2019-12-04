@@ -14,28 +14,30 @@ var url = '';
 
 //add your app get here for the home page '/'
 
-app.get('/',(req, res))( {
-    
-    res.render("index.ejs", getData{ date: date, explanation:explanation, title:title, url:url})
+
+app.get('/', function(req,res) {
+	getData();
+	res.render('index', {date: date, explanation: explanation, title: title, url: url});
 });
 
-//within the get call your function and render the ejs page
+
+    
 
 function getData(){
     fetch('https://csuserversidewebdevfinal.herokuapp.com/')
     .then(res => res.json())
-    .then(res => data. {
+    .then(data => {
         date = data.date;
         explanation = data.explanation;
         title = data.title;
         url = data.url;
 
-    }).get(res.redirect(err))
-
+    }).catch(err =>{
+	res.redirect('/error');
+    });
     
+     
 }
-
-
 
 
 app.listen(port, function () {
